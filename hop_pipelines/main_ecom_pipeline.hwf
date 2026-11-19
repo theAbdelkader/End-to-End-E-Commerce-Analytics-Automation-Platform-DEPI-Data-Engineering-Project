@@ -22,8 +22,8 @@
       <description/>
       <type>SPECIAL</type>
       <attributes/>
-      <xloc>560</xloc>
-      <yloc>240</yloc>
+      <xloc>2112</xloc>
+      <yloc>688</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -49,8 +49,8 @@
       <name>ingest_customers.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>240</yloc>
+      <xloc>2272</xloc>
+      <yloc>688</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -76,8 +76,8 @@
       <name>ingest_product.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>304</yloc>
+      <xloc>2272</xloc>
+      <yloc>752</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -103,8 +103,8 @@
       <name>ingest_sellers.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>368</yloc>
+      <xloc>2272</xloc>
+      <yloc>816</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -130,8 +130,8 @@
       <name>ingest_category_translation.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>432</yloc>
+      <xloc>2272</xloc>
+      <yloc>880</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -157,8 +157,8 @@
       <name>ingest_geolocation.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>496</yloc>
+      <xloc>2272</xloc>
+      <yloc>944</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -184,8 +184,8 @@
       <name>ingest_orders.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>560</yloc>
+      <xloc>2272</xloc>
+      <yloc>1008</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -211,8 +211,8 @@
       <name>ingest_order_items.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>624</yloc>
+      <xloc>2272</xloc>
+      <yloc>1072</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -238,8 +238,8 @@
       <name>ingest_order_payments.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>688</yloc>
+      <xloc>2272</xloc>
+      <yloc>1136</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -265,8 +265,8 @@
       <name>ingest_order_reviews.hpl</name>
       <type>PIPELINE</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>752</yloc>
+      <xloc>2272</xloc>
+      <yloc>1200</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -282,8 +282,8 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>816</yloc>
+      <xloc>2272</xloc>
+      <yloc>1264</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
@@ -292,8 +292,8 @@
       <description/>
       <type>SUCCESS</type>
       <attributes/>
-      <xloc>720</xloc>
-      <yloc>880</yloc>
+      <xloc>2272</xloc>
+      <yloc>1328</yloc>
       <parallel>N</parallel>
       <attributes_hac/>
     </action>
