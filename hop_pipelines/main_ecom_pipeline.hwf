@@ -28,7 +28,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_customers.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_customers.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -55,7 +55,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_product.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_product.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -82,7 +82,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_sellers.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_sellers.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -109,7 +109,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_category_translation.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_category_translation.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -136,7 +136,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_geolocation.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_geolocation.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -163,7 +163,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_orders.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_orders.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -190,7 +190,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_order_items.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_order_items.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -217,7 +217,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_order_payments.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_order_payments.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -244,7 +244,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\hop_pipelines\ingest_order_reviews.hpl</filename>
+      <filename>${PROJECT_HOME}\hop_pipelines\ingest_order_reviews.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>

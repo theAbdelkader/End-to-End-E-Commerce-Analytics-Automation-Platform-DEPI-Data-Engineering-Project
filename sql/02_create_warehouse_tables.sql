@@ -69,6 +69,5 @@ CREATE TABLE warehouse.fact_order_items (
     order_status VARCHAR(20),
     price NUMERIC(10, 2),
     freight_value NUMERIC(10, 2),
-    payment_value NUMERIC(10, 2),
     review_score INT
 );

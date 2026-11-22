@@ -1,4 +1,10 @@
 -- 1. تعبئة جدول التواريخ تلقائياً للفترة من 2016 إلى 2018
+
+TRUNCATE warehouse.fact_order_items, warehouse.dim_customers,
+  warehouse.dim_products, warehouse.dim_sellers,
+  warehouse.dim_geolocation, warehouse.dim_date
+RESTART IDENTITY CASCADE;
+
 INSERT INTO warehouse.dim_date (
         date_key,
         full_date,
@@ -103,7 +109,6 @@ INSERT INTO warehouse.fact_order_items (
         order_status,
         price,
         freight_value,
-        payment_value,
         review_score
     )
 SELECT oi.order_id,
@@ -111,26 +116,18 @@ SELECT oi.order_id,
     c.customer_key,
     p.product_key,
     s.seller_key,
-    TO_CHAR(o.order_purchase_timestamp, 'YYYYMMDD')::INT AS purchase_date_key,
+    TO_CHAR(o.order_purchase_timestamp, 'YYYYMMDD')::INT,
     o.order_status,
     oi.price,
     oi.freight_value,
-    COALESCE(pay.payment_value, 0.00) AS payment_value,
-    COALESCE(r.review_score, 0) AS review_score
+    r.review_score
 FROM cleaned.stg_order_items oi
-    JOIN cleaned.stg_orders o ON oi.order_id = o.order_id
-    LEFT JOIN warehouse.dim_customers c ON o.customer_id = c.customer_id
-    LEFT JOIN warehouse.dim_products p ON oi.product_id = p.product_id
-    LEFT JOIN warehouse.dim_sellers s ON oi.seller_id = s.seller_id
-    LEFT JOIN (
-        SELECT order_id,
-            SUM(payment_value) AS payment_value
-        FROM cleaned.stg_order_payments
-        GROUP BY order_id
-    ) pay ON oi.order_id = pay.order_id
-    LEFT JOIN (
-        SELECT order_id,
-            AVG(review_score)::INT AS review_score
-        FROM cleaned.stg_order_reviews
-        GROUP BY order_id
-    ) r ON oi.order_id = r.order_id;
+JOIN cleaned.stg_orders o ON oi.order_id = o.order_id
+LEFT JOIN warehouse.dim_customers c ON o.customer_id = c.customer_id
+LEFT JOIN warehouse.dim_products p ON oi.product_id = p.product_id
+LEFT JOIN warehouse.dim_sellers s ON oi.seller_id = s.seller_id
+LEFT JOIN (
+    SELECT order_id, AVG(review_score)::INT AS review_score
+    FROM cleaned.stg_order_reviews
+    GROUP BY order_id
+) r ON oi.order_id = r.order_id;

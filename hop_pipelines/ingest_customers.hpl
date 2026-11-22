@@ -17,7 +17,7 @@
   <transform>
     <type>CSVInput</type>
     <name>CSV file input</name>
-    <filename>E:\My_GITHUB\End-to-End-E-Commerce-Analytics-Automation-Platform-DEPI-Data-Engineering-Project\data\raw\olist_customers_dataset.csv</filename>
+    <filename>${PROJECT_HOME}\data\raw\olist_customers_dataset.csv</filename>
     <include_filename>N</include_filename>
     <rownum_field/>
     <header>Y</header>
